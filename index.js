@@ -9,6 +9,10 @@ app.get('/demo',(req,res)=>{
     res.send("this is the demo page os the application")
 })
 
+app.get('/kiran',(req,res)=>{
+    res.send('hii kiran')
+})
+
 app.listen(3000,()=>{
     console.log('app is running on port 3000')
 })
