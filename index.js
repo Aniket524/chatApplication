@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express()
+const { join } = require('node:path');
 
 app.get('/',(req,res)=>{
-    res.send('this is the main page of the application')
+    res.sendFile(join(__dirname, 'index.html'));
 })
 
 app.get('/demo',(req,res)=>{
