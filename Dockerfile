@@ -1,6 +1,6 @@
 FROM node:hydrogen-slim
 WORKDIR /app
 COPY . .
-RUN sudo npm i
+RUN npm i
 EXPOSE 3000
 CMD ['node','index.js']
